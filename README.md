@@ -5,10 +5,15 @@ Use Adversarial Autoencoder just for disentanglement, with no arbitrary prior.
 Tested on Python 3.8.10 + PyTorch 1.9.0. CUDA is required.
 
 ```
-python3 ./train.py --dataset-path ~/data --dis-channels 128 --beta 0.25 --epoch 100
+python3 ./train.py --dataset-path ~/data --latent-split 8 4 --dis-channels 128 --beta 0.25 --epoch 100
 ```
 
 ## Output
+Here are the result images with various random seeds.
+Rows consist of 8 channels block of latent variable z.
+Columns consist of 4 channels block of latent variable z.
+Diagonal ones are equal to raw output of the autoencoder, which is Decoder(Encoder(x)).
+
 ![run 1](images/dump0.png)
 ![run 2](images/dump1.png)
 ![run 3](images/dump2.png)
