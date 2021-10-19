@@ -1,4 +1,4 @@
-# aae-disentanglement
+# adversarial-disentanglement
 Use Adversarial Autoencoder just for disentanglement, with no arbitrary prior.
 
 ## Method
